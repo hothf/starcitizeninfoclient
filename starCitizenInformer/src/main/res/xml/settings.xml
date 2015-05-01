@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settingsCatGlobal" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="prefPushEnabled"
+            android:summary="@string/settingsPushSummary"
+            android:title="@string/settingsPushTitle" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settingsCatWidget" >
+        <ListPreference
+            android:key="prefWidgetColor"
+            android:entries="@array/settingsWidgetColors"
+            android:entryValues="@array/settingsWidgetColors"
+            android:defaultValue="@string/settingsWidgetDefault"
+            android:summary="@string/settingsWidgetColorSummary"
+            android:title="Widget Colors"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

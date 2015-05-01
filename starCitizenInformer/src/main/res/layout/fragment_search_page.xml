@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_big" >
+
+    <View
+        android:id="@+id/glowTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/glow_top" />
+
+    <ImageView
+        android:id="@+id/searchPageHeadImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/appName"
+        android:src="@drawable/rsi_socialize" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchPageHeadImage"
+        android:layout_marginBottom="4dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/SocialHeaderSearchTop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/socialSearchPlayers"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/SocialSearchTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SocialHeaderSearchTop"
+                android:layout_below="@+id/SocialHeaderSearchTop"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/SocialButtonSearchTop"
+                android:hint="@string/socialHintHandle"
+                android:imeOptions="actionDone"
+                android:textColor="#FFFFFF" />
+
+            <View
+                android:id="@+id/glowLeftTop"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/SocialSearchTop"
+                android:layout_alignTop="@+id/SocialHeaderSearchTop"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/fontBlueDefaultColor" />
+
+            <Button
+                android:id="@+id/SocialButtonSearchTop"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_alignBottom="@+id/SocialSearchTop"
+                android:layout_alignRight="@+id/SocialHeaderSearchTop"
+                android:layout_alignTop="@+id/SocialSearchTop"
+                android:background="@drawable/rsi_button_style"
+                android:text="@string/socialSearch"
+                android:textColor="@color/fontBlueDefaultColor" />
+
+            <TextView
+                android:id="@+id/SocialHeaderSearchBottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SocialHeaderSearchTop"
+                android:layout_alignRight="@+id/SocialHeaderSearchTop"
+                android:layout_below="@+id/SocialSearchTop"
+                android:layout_marginTop="20dp"
+                android:text="@string/socialSearchOrgas"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/SocialSearchBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/SocialHeaderSearchTop"
+                android:layout_below="@+id/SocialHeaderSearchBottom"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/SocialButtonSearchBottom"
+                android:hint="@string/socialHintHandle"
+                android:imeOptions="actionDone"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/SocialButtonSearchBottom"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_alignBottom="@+id/SocialSearchBottom"
+                android:layout_alignRight="@+id/SocialHeaderSearchTop"
+                android:layout_alignTop="@+id/SocialSearchBottom"
+                android:background="@drawable/rsi_button_style"
+                android:text="@string/socialSearch"
+                android:textColor="@color/fontBlueDefaultColor" />
+
+            <View
+                android:id="@+id/glowLeftBottom"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/SocialSearchBottom"
+                android:layout_alignTop="@+id/SocialHeaderSearchBottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/fontBlueDefaultColor" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

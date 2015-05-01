@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/rssItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        style="@style/newsTitleTextStyle"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/rssClickView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/list_item_style" />
+
+    <View
+        android:id="@+id/newsListItemCornerUpperLeft"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rsi_corner_upper_left" />
+
+    <View
+        android:id="@+id/newsListItemCornerLowerLeft"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/rsi_corner_lower_left" />
+
+    <View
+        android:id="@+id/newsListItemCornerUpperRight"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rsi_corner_upper_right" />
+
+    <View
+        android:id="@+id/newsListItemCornerLowerRight"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/rsi_corner_lower_right" />
+
+</RelativeLayout>

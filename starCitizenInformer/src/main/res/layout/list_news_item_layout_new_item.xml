@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/newsListItemTypeImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/appName" />
+
+    <TextView
+        android:id="@+id/newsListItemType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/newsListItemTypeImage"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/newsListItemNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/newsListItemType"
+        android:text="@string/newInfo"
+        android:textColor="@color/greenCircleColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/newsListItemTitle"
+        style="@style/newsTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/newsListItemType"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="18dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/newsListItemPostedImage"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="100dp"
+        android:layout_toLeftOf="@+id/newsListItemPosted"
+        android:contentDescription="@string/appName"
+        android:src="@drawable/rsi_posted" />
+
+    <TextView
+        android:id="@+id/newsListItemPosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="97dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/bluishGrey"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/newsListItemClickView"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/list_item_style_new_item" />
+
+    <ImageButton
+        android:id="@+id/newsListItemFavImageButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/transparent_button_style"
+        android:contentDescription="@string/appName"
+        android:src="@drawable/ic_fav_normal" />
+
+    <View
+        android:id="@+id/newsListItemCornerUpperLeft"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rsi_green_corner_upper_left" />
+
+    <View
+        android:id="@+id/newsListItemCornerLowerLeft"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/rsi_green_corner_lower_left" />
+
+    <View
+        android:id="@+id/newsListItemCornerUpperRight"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rsi_green_corner_upper_right" />
+
+    <View
+        android:id="@+id/newsListItemCornerLowerRight"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/rsi_green_corner_lower_right" />
+
+</RelativeLayout>

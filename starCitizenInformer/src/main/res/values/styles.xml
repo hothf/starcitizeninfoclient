@@ -1,0 +1,53 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat">
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="actionMenuTextColor">#ffffff</item>
+        <item name="homeAsUpIndicator">@drawable/caret</item>
+        <!--item name="searchViewSearchIcon">@drawable/ic_search</item> -->
+        <!-- @drawable/abc_ic_ab_back_holo_dark -->
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/actionbar</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+        <item name="background">@drawable/actionbar</item>
+        <!--
+        <item name="backgroundStacked">#574836</item>
+        <item name="backgroundSplit">#039856</item>
+        -->
+        <item name="actionOverflowButtonStyle">@style/overFlowCompat</item>
+    </style>
+
+    <style name="overFlowCompat" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/rsi_overflow</item>
+    </style>
+
+    <!-- action bar title text -->
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- action bar tab text -->
+    <style name="TabTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="newsTitleTextStyle">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">5</item>
+        <!-- 37e9f6 -->
+    </style>
+
+</resources>

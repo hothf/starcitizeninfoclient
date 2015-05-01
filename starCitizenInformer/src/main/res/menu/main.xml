@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/menuRefresh"
+        yourapp:showAsAction="never"/>
+    <item
+        android:id="@+id/action_select_all_as_read"
+        android:title="@string/menuMarkAll"
+        yourapp:showAsAction="never"/>
+    <item
+        android:id="@+id/action_refresh_twitter"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/menuRefresh"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_refresh_videos"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/menuRefresh"
+        yourapp:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        yourapp:actionViewClass="android.support.v7.widget.SearchView"
+        yourapp:showAsAction="always"/>
+    <item
+        android:id="@+id/action_addFansite"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add"
+        yourapp:showAsAction="always"/>
+    <item
+        android:id="@+id/action_pledge"
+        android:icon="@drawable/ic_pledge"
+        android:title="@string/pledge"
+        yourapp:showAsAction="always"/>
+    <item
+        android:id="@+id/action_voyager"
+        android:icon="@drawable/ic_voyager"
+        android:title="@string/voyager"
+        yourapp:showAsAction="always"/>
+
+</menu>

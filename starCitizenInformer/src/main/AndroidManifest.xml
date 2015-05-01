@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.kauz.starcitizen.informer"
+    android:versionCode="17"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="de.kauz.starcitizen.informer.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" >
+    </permission>
+
+    <uses-permission android:name="de.kauz.starcitizen.informer.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="de.kauz.starcitizen.informer.utils.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/appName"
+        android:theme="@style/CustomActionBarTheme" >
+
+        <!-- Required for applications which use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="de.kauz.starcitizen.informer.activities.Main"
+            android:label="@string/appName"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.Detail" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.Goals" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.Timeline" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.Faqs" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.PlayerInspect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.OrgaInspect" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.ImageGallery" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:configChanges="orientation"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+        <activity android:name="de.kauz.starcitizen.informer.activities.BrowserContainer" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:launchMode="singleTask"
+                android:value="de.kauz.starcitizen.informer.activities.Main" />
+        </activity>
+
+        <receiver
+            android:name="de.kauz.starcitizen.informer.utils.PushBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.infostretch.iSOSAndroid" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="de.kauz.starcitizen.informer.widget.AppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="update_widget_from_activity"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget" />
+        </receiver>
+
+        <provider
+            android:name="de.kauz.starcitizen.informer.databases.FanSitesDBContentprovider"
+            android:authorities="de.kauz.starcitizen.informer.databases.FanSitesDBContentprovider"
+            android:exported="false" >
+        </provider>
+        <provider
+            android:name="de.kauz.starcitizen.informer.databases.FavouritesDBContentprovider"
+            android:authorities="de.kauz.starcitizen.informer.databases.FavouritesDBContentprovider"
+            android:exported="false" >
+        </provider>
+        <provider
+            android:name="de.kauz.starcitizen.informer.databases.NewsDBContentprovider"
+            android:authorities="de.kauz.starcitizen.informer.databases.NewsDBContentprovider"
+            android:exported="false" >
+        </provider>
+
+        <service android:name="de.kauz.starcitizen.informer.services.PushIntentService" />
+        <service android:name="de.kauz.starcitizen.informer.services.RssService" />
+         <service
+        android:name="de.kauz.starcitizen.informer.widget.AppWidgetListService"
+        android:exported="false"
+        android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+</manifest>

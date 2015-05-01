@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global Colors -->
+    <color name="fontBlueDefaultColor">#04f8ff</color>
+    <color name="softBlue">#990097ff</color>
+    <color name="yellowOrange">#ff932c</color>
+    <color name="blueCircleColor">#37e9f6</color>
+    <color name="bluishGrey">#7e98a2</color>
+    <color name="greenCircleColor">#4dff2c</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Widget colors -->
+    <!-- Widget Default -->
+    <color name="widgetThemeBaseDefault">#88000000</color>
+    <color name="widgetThemeDefault">#37e9f6</color>
+    <color name="widgetThemeDefaultSecondary">#210097ff</color>
+
+    <!-- Widget Light -->
+    <color name="widgetThemeBaseLight">#88cccccc</color>
+    <color name="widgetThemeLight">#323232</color>
+    <color name="widgetThemeLightSecondary">#55767676</color>
+
+    <!-- Widget Red -->
+    <color name="widgetThemeBaseRed">#88000000</color>
+    <color name="widgetThemeRed">#B22400</color>
+    <color name="widgetThemeRedSecondary">#55B22400</color>
+
+    <!-- Widget Orange -->
+    <color name="widgetThemeBaseOrange">#88000000</color>
+    <color name="widgetThemeOrange">#ff932c</color>
+    <color name="widgetThemeOrangeSecondary">#55ff932c</color>
+
+    <!-- Widget Green -->
+    <color name="widgetThemeBaseGreen">#88000000</color>
+    <color name="widgetThemeGreen">#4dff2c</color>
+    <color name="widgetThemeGreenSecondary">#554dff2c</color>
+
+</resources>

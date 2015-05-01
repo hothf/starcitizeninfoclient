@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/twitterListItemTitle"
+        style="@style/newsTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="18dp"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/twitterListItemPosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/twitterListItemTitle"
+        android:layout_below="@+id/twitterListItemTitle"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/twitterListItemCommentsImage"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/bluishGrey"
+        android:textIsSelectable="true"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/twitterListItemCommentsImage"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignTop="@+id/twitterListItemComments"
+        android:layout_marginRight="2dp"
+        android:layout_toLeftOf="@+id/twitterListItemComments"
+        android:contentDescription="@string/appName"
+        android:src="@drawable/rsi_comments" />
+
+    <TextView
+        android:id="@+id/twitterListItemComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/twitterListItemPosted"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/bluishGrey"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/twitterHelper"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/twitterListItemComments"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/twitterListItemClickView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/twitterHelper"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/list_item_style" />
+
+    <View
+        android:id="@+id/newsListItemCornerUpperLeft"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rsi_corner_upper_left" />
+
+    <View
+        android:id="@+id/newsListItemCornerLowerLeft"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignBottom="@+id/twitterListItemClickView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/rsi_corner_lower_left" />
+
+    <View
+        android:id="@+id/newsListItemCornerUpperRight"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rsi_corner_upper_right" />
+
+    <View
+        android:id="@+id/newsListItemCornerLowerRight"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_alignBottom="@+id/twitterListItemClickView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rsi_corner_lower_right" />
+
+</RelativeLayout>

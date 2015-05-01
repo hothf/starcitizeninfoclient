@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_big" >
+
+    <TextView
+        android:id="@+id/MoreLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/loading"
+        android:textColor="@color/fontBlueDefaultColor"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/TwitterLogoProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MoreLoading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:visibility="invisible" />
+
+    <de.kauz.starcitizen.informer.utils.ZoomableOverlayImage
+        android:id="@+id/TwitterUserLogo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/MoreLoading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/appName" />
+
+    <View
+        android:id="@+id/DetailCornerUpperLeft"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignLeft="@+id/TwitterUserLogo"
+        android:layout_alignTop="@+id/TwitterUserLogo"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/rsi_bordercorner_upper_left" />
+
+    <View
+        android:id="@+id/DetailLowerLeft"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/TwitterUserLogo"
+        android:layout_alignLeft="@+id/TwitterUserLogo"
+        android:layout_marginBottom="-3dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/rsi_bordercorner_lower_left" />
+
+    <View
+        android:id="@+id/DetailUpperRight"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignRight="@+id/TwitterUserLogo"
+        android:layout_alignTop="@+id/TwitterUserLogo"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/rsi_bordercorner_upper_right" />
+
+    <View
+        android:id="@+id/DetailLowerRight"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignBottom="@+id/TwitterUserLogo"
+        android:layout_alignRight="@+id/TwitterUserLogo"
+        android:layout_marginBottom="-3dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/rsi_bordercorner_lower_right" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/TwitterListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/TwitterUserLogo"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp" />
+
+    <View
+        android:id="@+id/MainVerticalDivider"
+        android:layout_width="0.5dp"
+        android:layout_height="0.5dp"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/glowTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/glow_top" />
+
+</RelativeLayout>

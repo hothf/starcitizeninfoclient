@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:background="#66888888"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/drawerItemImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/appName"
+        android:paddingLeft="16dp"
+        android:paddingTop="0dp" />
+
+    <TextView
+        android:id="@+id/drawerItemTitle"
+        style="@style/newsTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/drawerItemImage"
+        android:textColor="@color/blueCircleColor"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/drawerCounterBack"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/drawerItemSelector"
+        android:background="@drawable/counter_background" />
+
+    <TextView
+        android:id="@+id/drawerCounterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/drawerCounterBack"
+        android:layout_alignLeft="@+id/drawerCounterBack"
+        android:layout_alignRight="@+id/drawerCounterBack"
+        android:layout_alignTop="@+id/drawerCounterBack"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:textColor="@color/fontBlueDefaultColor"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/drawerItemSelector"
+        android:layout_width="4dp"
+        android:layout_height="65dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/fontBlueDefaultColor"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,334 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_big" >
+
+    <View
+        android:id="@+id/glowTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/glow_top" />
+
+    <TextView
+        android:id="@+id/DetailLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/loading"
+        android:textColor="@color/fontBlueDefaultColor"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/downloadContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/DetailLoading"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_style" >
+
+            <de.kauz.starcitizen.informer.utils.ZoomableOverlayImage
+                android:id="@+id/DetailPreViewImage"
+                android:layout_width="fill_parent"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="11dp"
+                android:contentDescription="@string/appName"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/DetailShareButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/DetailPostedImage"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/list_item_style"
+                android:contentDescription="@string/appName"
+                android:src="@drawable/ic_share" />
+
+            <Button
+                android:id="@+id/DetailPrevStartVideo"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignTop="@+id/DetailPreViewImage"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:background="@drawable/play_button"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/DetailPreOpenGallery"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignTop="@+id/DetailPreViewImage"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:background="@drawable/gallery_button"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/DetailBorderCornerUpperLeft"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rsi_bordercorner_upper_left" />
+
+            <View
+                android:id="@+id/DetailBorderCornerLowerLeft"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="138dp"
+                android:background="@drawable/rsi_bordercorner_lower_left" />
+
+            <View
+                android:id="@+id/DetailBorderCornerUpperRight"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rsi_bordercorner_upper_right" />
+
+            <View
+                android:id="@+id/DetailBorderCornerLowerRight"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="138dp"
+                android:background="@drawable/rsi_bordercorner_lower_right" />
+
+            <ImageView
+                android:id="@+id/DetailPostedImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/DetailPreViewImage"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/DetailPosted"
+                android:contentDescription="@string/appName"
+                android:src="@drawable/rsi_posted" />
+
+            <TextView
+                android:id="@+id/DetailPosted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DetailPreViewImage"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/DetailImage"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/bluishGrey"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/DetailImage"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/DetailPreViewImage"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/DetailComments"
+                android:contentDescription="@string/appName"
+                android:src="@drawable/rsi_comments" />
+
+            <TextView
+                android:id="@+id/DetailComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/DetailPreViewImage"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/bluishGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/DetailTextIntroduction"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/DetailShareButton"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/DetailTextParagraph1"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/DetailTextIntroduction"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/DetailTextParagraph2"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/DetailTextParagraph1"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:textIsSelectable="true" />
+
+            <View
+                android:id="@+id/DetailCornerUpperLeft"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rsi_corner_upper_left" />
+
+            <View
+                android:id="@+id/DetailLowerLeft"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/rsi_corner_lower_left" />
+
+            <View
+                android:id="@+id/DetailUpperRight"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rsi_corner_upper_right" />
+
+            <View
+                android:id="@+id/DetailLowerRight"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/rsi_corner_lower_right" />
+
+            <ProgressBar
+                android:id="@+id/DetailImageLoadingProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/DetailLinkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/DetailTextParagraph2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rsi_button_style"
+                android:text="@string/view"
+                android:textColor="@color/fontBlueDefaultColor" />
+
+            <View
+                android:id="@+id/invisHelper"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/DetailLinkButton"
+                android:layout_marginTop="40dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/scrollHelper"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="#1137e9f6"
+        android:visibility="invisible" >
+
+        <View
+            android:id="@+id/helper"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2.55dp"
+            android:background="@color/fontBlueDefaultColor" />
+
+        <TextView
+            android:id="@+id/scrollBottom"
+            style="@style/newsTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="@drawable/transparent_button_style"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/scrollToBottom"
+            android:textColor="@color/fontBlueDefaultColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/scrollTop"
+            style="@style/newsTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/helper"
+            android:background="@drawable/transparent_button_style"
+            android:gravity="center_vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="@string/scrollToTop"
+            android:textColor="@color/fontBlueDefaultColor"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

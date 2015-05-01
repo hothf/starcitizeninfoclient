@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_big" >
+
+    <View
+        android:id="@+id/glowTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/glow_top" />
+
+    <Button
+        android:id="@+id/AboutFaqsButton"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/rsi_button_style"
+        android:text="@string/FAQ"
+        android:textColor="@color/fontBlueDefaultColor" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AboutVersionInfoText"
+        android:layout_below="@+id/AboutFaqsButton"
+        android:layout_marginBottom="4dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/AboutText1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/aboutCopyright"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/AboutText2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/AboutText1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/aboutCreator"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/glowLeftTop"
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/AboutText2"
+                android:layout_alignTop="@+id/AboutText1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/fontBlueDefaultColor" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/AboutVersionInfoText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/appName"
+        android:textColor="@color/bluishGrey"
+        android:textSize="14sp" />
+
+</RelativeLayout>

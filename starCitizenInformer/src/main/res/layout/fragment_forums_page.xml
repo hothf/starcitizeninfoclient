@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_big" >
+
+    <Spinner
+        android:id="@+id/forumsPageSelectionSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/fontBlueDefaultColor" />
+
+    <TextView
+        android:id="@+id/forumsPageLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forumsPageSelectionSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/loading"
+        android:textColor="@color/fontBlueDefaultColor"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/glowTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/glow_top" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/SocialForumList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/forumsPageLoading"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="0dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp" />
+
+</RelativeLayout>

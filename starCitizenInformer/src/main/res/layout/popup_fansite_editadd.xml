@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popUpContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/popup_background_style" >
+
+    <TextView
+        android:id="@+id/popUpFansiteInfo"
+        style="@style/newsTitleTextStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/popUpFansiteAddInfo"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/popUpFansiteAddTitleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/popUpFansiteInfo"
+        android:layout_alignRight="@+id/popUpFansiteInfo"
+        android:layout_below="@+id/popUpFansiteInfo"
+        android:layout_marginTop="8dp"
+        android:hint="@string/popUpFansiteTitleEditHint"
+        android:imeOptions="actionDone"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/popUpFansiteAddurlEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/popUpFansiteAddTitleEdit"
+        android:layout_alignRight="@+id/popUpFansiteAddTitleEdit"
+        android:layout_below="@+id/popUpFansiteAddTitleEdit"
+        android:layout_marginTop="8dp"
+        android:hint="@string/popUpFansiteURLEditHint"
+        android:imeOptions="actionDone"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/popUpFanSiteChooseCategory"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popUpFansiteAddurlEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/fontBlueDefaultColor" />
+
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popUpFanSiteChooseCategory"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp" >
+
+        <View
+            android:id="@+id/helper"
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/popUpFansiteCancelButton"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/helper"
+            android:layout_alignLeft="@+id/helper"
+            android:layout_alignTop="@+id/helper"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/rsi_button_style"
+            android:text="@string/Cancel"
+            android:textColor="@color/fontBlueDefaultColor" />
+
+        <Button
+            android:id="@+id/popUpFansiteAddButton"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/helper"
+            android:layout_alignTop="@+id/helper"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="@drawable/rsi_button_style"
+            android:text="@string/add"
+            android:textColor="@color/fontBlueDefaultColor" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/popUpFansiteAddButton"
+            android:layout_marginTop="7dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

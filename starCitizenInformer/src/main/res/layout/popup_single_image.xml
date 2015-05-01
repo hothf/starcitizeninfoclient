@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popUpContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="@drawable/popup_background_style" >
+
+                <ImageView
+                    android:id="@+id/popUpSingleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/appName"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="125dp"
+                    android:layout_height="125dp" />
+
+                <ProgressBar
+                    android:id="@+id/popUpSingleImageProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </ScrollView>
+    </HorizontalScrollView>
+    
+       <Button
+            android:id="@+id/popUpSingleImageSaveButton"
+            android:layout_width="220dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="45dp"
+            android:background="@drawable/list_item_style"
+            android:text="@string/saveImage"
+            android:textColor="@color/fontBlueDefaultColor"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/popUpSingleImageShareButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/popUpSingleImageSaveButton"
+            android:background="@drawable/list_item_style"
+            android:contentDescription="@string/appName"
+            android:src="@drawable/ic_share"
+            android:visibility="gone" />
+
+
+</RelativeLayout>

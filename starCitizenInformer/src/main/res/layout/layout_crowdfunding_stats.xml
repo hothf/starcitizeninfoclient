@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/crowdStatsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/list_item_styleless_cornered" >
+
+    <TextView
+        android:id="@+id/crowdStatsFansRaisedInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/statsFansInfo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/crowdStatsFansRaised"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/crowdStatsGoalImg"
+        android:layout_toRightOf="@+id/crowdStatsFansRaisedInfo"
+        android:ellipsize="middle"
+        android:textColor="@color/blueCircleColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/crowdStatsFundsRaisedInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crowdStatsFansRaisedInfo"
+        android:layout_below="@+id/crowdStatsFansRaisedInfo"
+        android:layout_marginTop="4dp"
+        android:text="@string/statsFundsInfo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/crowdStatsFundsRaised"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/crowdStatsFansRaised"
+        android:layout_alignTop="@+id/crowdStatsFundsRaisedInfo"
+        android:layout_toLeftOf="@+id/crowdStatsGoalImg"
+        android:ellipsize="middle"
+        android:textColor="@color/blueCircleColor"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/crowdStatsGoalImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/appName"
+        android:src="@drawable/ic_goals" />
+
+</RelativeLayout>

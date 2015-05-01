@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Agent -->
+    <string name="agentRemoveFavouriteDialogTitle">Confirm removal</string>
+    <string name="agentRemoveFavouriteDialogMessage">Remove favourite from database?</string>
+    <string name="agentRemoveFavouriteDialogPositiveButton">Remove</string>
+    <string name="agentAddedFav">Favourite added</string>
+    <string name="agentRemovedFav">Favourite removed</string>
+
+    <!-- ImageSlideGallery -->
+    <string name="imageGalleryTitle">Image</string>
+    <string name="imageGalleryHint">Click image to view/save in higher quality</string>
+
+    <!-- Settings -->
+    <string name="settingsPushSummary">Sends push-notifications with news to this device.</string>
+    <string name="settingsPushTitle">Push-Notifications</string>
+    <string name="settingsCatWidget">Widget</string>
+    <string name="settingsCatGlobal">Global Settings</string>
+    <string name="settingsWidgetDefault">Default</string>
+    <string name="settingsWidgetColorSummary">Set the color theme of the app widget</string>
+
+    <!-- Main -->
+    <string name="mainButtonCitizen">Citizens</string>
+    <string name="mainButtonMore">More</string>
+    <string name="mainNewsFeatured">Featured</string>
+    <string name="mainNewsFound">Seen:</string>
+    <string name="mainNewsNoConnection">No internet connection !</string>
+
+    <!-- Menu -->
+    <string name="menuRefresh">Refresh</string>
+    <string name="menuMarkAll">Mark all as read</string>
+    <string name="menuAbout">About</string>
+    <string name="setAsFav">Set as favourite</string>
+    <string name="unsetFav">Remove favourite</string>
+
+    <!-- Goals -->
+    <string name="goalsTitle">Stretch Goals</string>
+    <string name="goalCurrentCollectedPref">CURRENT:</string>
+    <string name="goalNextGoalCollectedPref">NEXT GOAL:</string>
+    <string name="goalCurrentDescriptionButton">Show reward</string>
+    <string name="goalCurrentDescriptionDialogTitle">Reward</string>
+    <string name="goalShowTimeline">Show timeline</string>
+    <string name="goalsTimeline">Timeline</string>
+
+    <!-- FanSite -->
+    <string name="popUpFansiteTitleInfo">Title</string>
+    <string name="popUpFansiteTitleEditHint">Title</string>
+    <string name="popUpFansiteURLInfo">URL</string>
+    <string name="popUpFansiteURLEditHint">http://www..</string>
+    <string name="popUpFansiteAddInfo">Add a new Fansite</string>
+    <string name="popUpFansiteEditInfo">Edit a Fansite</string>
+
+    <!-- Errors -->
+    <string name="errorReadDB">Sorry, I could not read the database</string>
+    <string name="errorServerFault">Sorry, I failed loading - the server returned an error</string>
+    <string name="errorParseFault">Sorry, I failed loading - parsing error</string>
+    <string name="errorDownloadImageProblems">Sorry, I have problems downloading the image</string>
+    <string name="errorNotSure">Sorry, I could not find what you were looking for</string>
+    <string name="errorRssDownload">Sorry, I have problems downloading the RSS feed</string>
+    <string name="errorSavingImage">Sorry, I could not save the image</string>
+    <string name="errorMemoryImageProblems">Sorry, I ran out of memory</string>
+
+    <!-- OrgaInspect -->
+    <string name="OrgaNotFound">Organization not found</string>
+    <string name="OrgaName">Name: </string>
+    <string name="OrgaTags">Tags: </string>
+    <string name="OrgaFocus">Focus: </string>
+    <string name="OrgaDescription">Description: </string>
+
+    <!-- TwitterFeed -->
+    <string name="TwitterFeedTitle">Twitter Feed</string>
+
+    <!-- Favourites -->
+    <string name="favouriteEmptyTextNews">You have no favourite news</string>
+    <string name="favouriteEmptyTextPlayers">You have no favourite players</string>
+    <string name="favouriteEmptyTextOrgs">You have no favourite organizations</string>
+    <string name="favouriteSavedPrefix">Saved: </string>
+
+    <!-- PlayerInspect -->
+    <string name="PlayerNotFound">Player not found</string>
+    <string name="PlayerName">Name: </string>
+    <string name="PlayerRecord">Record: </string>
+    <string name="PlayerEnlisted">Enlisted: </string>
+    <string name="PlayerRole">Role: </string>
+    <string name="PlayerOrganization">Main Org: </string>
+    <string name="PlayerBio">Bio: </string>
+    <string name="PlayerWebsite">Website: </string>
+    <string name="PlayerLocation">Location: </string>
+    <string name="PlayerFluency">Fluency: </string>
+
+    <!-- Citizen -->
+    <string name="socialTitle">Citizens</string>
+    <string name="socialHintHandle">Handle</string>
+    <string name="socialSearch">Search</string>
+    <string name="socialSearchOrgas">Search Organization</string>
+    <string name="socialSearchPlayers">Search Player</string>
+    <string name="citizenForumHead">Forum Feed (WIP)</string>
+
+    <!-- About -->
+    <string name="aboutTitle">About</string>
+    <string name="aboutCopyright">THIS IS AN UNOFFICIAL FAN APP.\n\nCopyright holder of some of the graphical styles, designs and content is: 2015 Cloud Imperium Games Corporation and Roberts Space Industries Corp.</string>
+    <string name="aboutCreator">The creator of the original app: "Kauz"  is not responsible for the content which is dynamically loaded. NOTE that this is now an open source project where the new developer is responsible for changes and additions.</string>
+    <string name="aboutOfficialWebsite">Visit RSI</string>
+    <string name="newInfo">// NEW!</string>
+
+    <!-- Arrays -->
+    <string-array name="settingsWidgetColors">
+        <item>Default</item>
+        <item>Light</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Green</item>
+    </string-array>
+    <string-array name="infoSpinnerArray">
+        <item>Transmissions</item>
+        <item>Citizens</item>
+        <item>Engineering</item>
+        <item>Spectrum Dispatch</item>
+    </string-array>
+    <string-array name="forumsSpinnerArray">
+        <item>General Chat</item>
+        <item>New Recruits</item>
+        <item>Arena Commander</item>
+        <item>Q and A</item>
+        <item>Game Ideas</item>
+        <item>Fan Art and Fiction</item>
+        <item>Fan Sites</item>
+        <item>Modding</item>
+        <item>The Next Great Starship</item>
+        <item>Organizations</item>
+        <item>Events</item>
+        <item>Ask a Developer</item>
+        <item>General Bug Reports</item>
+        <item>Launcher Bugs</item>
+        <item>Art Issues</item>
+        <item>Gameplay Bugs</item>
+        <item>Organization Bugs</item>
+        <item>Hardware</item>
+        <item>Wing Commander</item>
+        <item>Star/Freelancer</item>
+        <item>Conq.Frontier Wars</item>
+        <item>Other Games</item>
+        <item>Off Topic</item>
+    </string-array>
+    <string-array name="newsItemMenu">
+        <item>Mark as read</item>
+    </string-array>
+    <string-array name="faqsSpinnerArray">
+        <item>Arena Commander</item>
+        <item>Shipping</item>
+        <item>Alpha Slot</item>
+        <item>Subscriptions</item>
+        <item>Account</item>
+        <item>Hangar Module</item>
+        <item>Orgs</item>
+        <item>United Earth Credits</item>
+        <item>XMPP Chat Client</item>
+    </string-array>
+
+    <!-- layout stats -->
+    <string name="statsFansInfo">Citizens:</string>
+    <string name="statsFundsInfo">Funds:</string>
+    <string name="statsGoalPercentageInfo">Stretch Goal:</string>
+
+    <!-- details -->
+    <string name="scrollToBottom">Bottom</string>
+    <string name="scrollToTop">Top</string>
+
+    <!-- Utils -->
+    <string name="empty">Sorry, this section seems to be empty</string>
+    <string name="voyager">Voyager shop</string>
+    <string name="pledge">Pledge shop</string>
+    <string name="FAQ">View FAQ sections</string>
+    <string name="faqs_title">FAQ</string>
+    <string name="shareImage">Share image</string>
+    <string name="saveImageInfo">Image saved as</string>
+    <string name="saveImageTitlePrefix">SC Image</string>
+    <string name="saveImageDescription">Image saved through Star Citizen Informer App</string>
+    <string name="saveImage">Save image to gallery</string>
+    <string name="disclaimText">The programmer of the app is not responsible for the content of the following links.</string>
+    <string name="urlNotValid">Sorry the following url is not valid: </string>
+    <string name="OK">OK</string>
+    <string name="Cancel">Cancel</string>
+    <string name="deleteQuestionPrefix">Do you want to remove </string>
+    <string name="deleteQuestionSuffix"> from your list? </string>
+    <string name="shareSuffix">- send via Star Citizen Informer App</string>
+    <string name="shareDetails">Share this news</string>
+    <string name="Edit">Edit</string>
+    <string name="Remove">Remove</string>
+    <string name="add">Add</string>
+    <string name="appName">Star Citizen Informer</string>
+    <string name="appNameBIG">STAR CITIZEN INFORMER</string>
+    <string name="widgetDescCitizen">Citizens:</string>
+    <string name="widgetDescFunds">Funds:</string>
+    <string name="loading">LOADING</string>
+    <string name="view">View on Website</string>
+    <string name="close">Close</string>
+    <string name="widgetNoConn">Con. lost</string>
+    <string name="readMore"> .. read more on the RSI website</string>
+    <string name="errorBadLink">Sorry, I am not able to open this link!</string>
+    <string name="errorNoConnection">Loading failed - I could not establish network access</string>
+    <string name="pushNotify">New content received!</string>
+    <string name="search">Search</string>
+    <string name="emptyNewsSearchResult">I found no matching news</string>
+
+</resources>

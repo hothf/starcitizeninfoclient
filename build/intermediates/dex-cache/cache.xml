@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-d84ecba38003c3c3ca91522ca3f57f24a8f19b8b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-49bdff81c1b6cdfdb8770027b1208d769d3c6c81.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-47ab40bb481c7c7dac14afe23a6c290da2d275af.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-775f269801e4c9f4a1f46d3b80e346df39686e8f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-4ad60a0ddd4ce1b077bbfc3f65a020fba8362fca.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-2c65e617491aa9dc5fdc2d8348461f2e52021cf9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\libs\jsoup-1.7.3-javadoc .jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="8542caf3a22470c4049de8f181efec2dba7fc608">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\jsoup-1.7.3-javadoc -e66c74d26f4f9270f1b8d96331b04726cd4388a6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-694e0fa5a36d5205f09132055d3eb42bf4759e76.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-4e8253311ead066072c455ce222dfccb7ef1a0a9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-598e163c18c8de2c99388f5e855a0c8c99335b86.jar" />
+    </item>
+    <item
+        jar="D:\Develop\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-14fb5a019e679fbc697dfa99658906fdd8d27529.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\starcitizeninfoclient\pulltorefreshlibrary\unspecified\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="614b8b30d8ecbb56ac1816bd343b2b6893bc6b56">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-9423b569ebaecf31ed3295f30e4efec11d5efe1c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\libs\jsoup-1.7.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\jsoup-1.7.3-b54c26d8efb51a276de874116969051597c418bf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-207e526e178ecc54ec8dcaeee9daf8463097747d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-e155395c5feb94f98fd6679a0a0813a1df9de75f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-6d1fc80cfd88ed23bd6d46195c07eb2c1747e8ef.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-4ff84710fea8bd2eee46f37ffc79165526ccfd94.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-f5cb2f5db3a54b3c2a1b2400ccb66086923d4831.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-e8386183224afe683f183c5c2f980b1a52c86624.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-ce1eb4261945b4c9c5e0b06ab714e2a3adca009f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-b123f0aa44eec7b0e616b78d195846bfb4fdeb7c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-c0ec97ed5399e9e07a84fe122098ed7da030148e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-9caca71cacb05cd459eac83da0e7fb3c0bd13a0e.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-8ac65183a17a01dc154b94a38cfbfe13362a0c2b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-74398ea3481bb5e647202823918c5aa75499b5d6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="C:\Users\Tommy\AndroidStudioProjects\starcitizeninfoclient\starCitizenInformer\build\intermediates\pre-dexed\debug\classes-1ba756e8b2446f315fc74f3f1d595f4d83e435d8.jar" />
+    </item>
+
+</items>

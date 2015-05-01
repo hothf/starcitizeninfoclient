@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/background_big" >
+
+    <View
+        android:id="@+id/glowTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/glow_top" />
+
+    <TextView
+        android:id="@+id/GoalLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/loading"
+        android:textColor="@color/fontBlueDefaultColor"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/goalCurrentContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GoalLoading"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/GoalCurrentHeadImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@string/appName"
+            android:src="@drawable/rsi_funds" />
+
+        <TextView
+            android:id="@+id/GoalCurrentFundsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/GoalCurrentHeadImage"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/GoalCurrentGoalFunds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/GoalCurrentFundsText"
+            android:layout_alignRight="@+id/GoalCurrentFundsText"
+            android:layout_below="@+id/GoalCurrentFundsText"
+            android:layout_marginTop="4dp"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/fontBlueDefaultColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/GoalCurrentPercentageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/GoalCurrentLoadingProgress"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/GoalCurrentLoadingProgress"
+            android:layout_marginRight="24dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/fontBlueDefaultColor"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/GoalCurrentLoadingProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/GoalCurrentGoalFunds"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/GoalCurrentPercentageText"
+            android:progressDrawable="@drawable/progressgoal" />
+
+        <Button
+            android:id="@+id/GoalCurrentDescriptionButton"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/GoalCurrentLoadingProgress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rsi_button_style"
+            android:text="@string/goalCurrentDescriptionButton"
+            android:textColor="@color/fontBlueDefaultColor"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/GoalShowTimelineButton"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/GoalCurrentDescriptionButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rsi_button_style"
+            android:text="@string/goalShowTimeline"
+            android:textColor="@color/fontBlueDefaultColor"
+            android:visibility="gone" />
+
+        <!--
+        <ScrollView
+            android:id="@+id/GoalCurrentDescriptionContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/GoalCurrentLoadingProgress"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/list_item_style"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/GoalCurrentDescriptionText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </ScrollView> -->
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/GoalListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/goalCurrentContainer"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/glowLeftTop"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/glowLeftTop"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/GoalListView"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="@color/fontBlueDefaultColor"
+        android:visibility="gone" />
+
+</RelativeLayout>

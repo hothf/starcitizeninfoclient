@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/fansiteTitle"
+        style="@style/newsTitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/fansiteEdit"
+        android:layout_toRightOf="@+id/fansiteItemImage"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/fansiteClickView"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/list_item_styleless" />
+
+    <ImageButton
+        android:id="@+id/fansiteEdit"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/transparent_button_style"
+        android:contentDescription="@string/appName"
+        android:src="@drawable/ic_edit" />
+
+    <ImageView
+        android:id="@+id/fansiteItemImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="7.5dp"
+        android:contentDescription="@string/appName"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+</RelativeLayout>

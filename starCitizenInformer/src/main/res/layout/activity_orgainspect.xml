@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_big" >
+
+    <View
+        android:id="@+id/glowTop"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/glow_top" />
+
+    <TextView
+        android:id="@+id/OrgaLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/loading"
+        android:textColor="@color/fontBlueDefaultColor"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:id="@+id/downloadContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/OrgaLoading"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:visibility="invisible" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_item_style" >
+
+            <de.kauz.starcitizen.informer.utils.ZoomableOverlayImage
+                android:id="@+id/OrgaImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:contentDescription="@string/appName"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/OrganizationInfosNotAvailable"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="70dp"
+                android:text="@string/OrgaNotFound"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/OrgaMemeberInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/OrgaImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:textAlignment="center"
+                android:textColor="@color/bluishGrey"
+                android:textIsSelectable="true"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/DetailBorderCornerUpperLeft"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignLeft="@+id/OrgaImage"
+                android:layout_alignTop="@+id/OrgaImage"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="-3dp"
+                android:background="@drawable/rsi_bordercorner_upper_left" />
+
+            <View
+                android:id="@+id/DetailBorderCornerLowerLeft"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignBottom="@+id/OrgaImage"
+                android:layout_alignLeft="@+id/OrgaImage"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/rsi_bordercorner_lower_left" />
+
+            <View
+                android:id="@+id/DetailBorderCornerUpperRight"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignRight="@+id/OrgaImage"
+                android:layout_alignTop="@+id/OrgaImage"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="-3dp"
+                android:background="@drawable/rsi_bordercorner_upper_right" />
+
+            <View
+                android:id="@+id/DetailBorderCornerLowerRight"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignBottom="@+id/OrgaImage"
+                android:layout_alignRight="@+id/OrgaImage"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/rsi_bordercorner_lower_right" />
+
+            <TextView
+                android:id="@+id/OrgaInfos1Desc"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/OrgaImage"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="36dp"
+                android:layout_toLeftOf="@+id/invisHelper"
+                android:text="@string/OrgaName"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OrgaInfos2Desc"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/OrgaInfo1"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/invisHelper"
+                android:text="@string/OrgaTags"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OrgaInfos3Desc"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/OrgaInfo2"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/invisHelper"
+                android:text="@string/OrgaFocus"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OrgaInfos4Desc"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/OrgaInfo3"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/invisHelper"
+                android:text="@string/OrgaDescription"
+                android:textColor="@color/fontBlueDefaultColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OrgaInfo1"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/OrgaImage"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="36dp"
+                android:layout_toRightOf="@+id/invisHelper"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OrgaInfo2"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/OrgaInfo1"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/invisHelper"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OrgaInfo3"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/OrgaInfo2"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/invisHelper"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/OrgaInfo4"
+                style="@style/newsTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/OrgaInfos4Desc"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/OrgaInfos4Desc"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="18dp"
+                android:textIsSelectable="true"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/DetailCornerUpperLeft"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rsi_corner_upper_left" />
+
+            <View
+                android:id="@+id/DetailLowerLeft"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/rsi_corner_lower_left" />
+
+            <View
+                android:id="@+id/DetailUpperRight"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/rsi_corner_upper_right" />
+
+            <View
+                android:id="@+id/DetailLowerRight"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginRight="0dp"
+                android:background="@drawable/rsi_corner_lower_right" />
+
+            <ProgressBar
+                android:id="@+id/OrgaImageProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/OrgaDetailButton"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/OrgaInfo4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/rsi_button_style"
+                android:text="@string/view"
+                android:textColor="@color/fontBlueDefaultColor" />
+
+            <View
+                android:id="@+id/invisHelper"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/OrgaDetailButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
